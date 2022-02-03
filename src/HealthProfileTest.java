@@ -206,7 +206,7 @@ class HealthProfile {
         System.out.println("\t\tYour maximum heart rate is " + df.format(getMaximumHeartRate()));
         System.out.println("\t\tYour minimum target heart rate is " + df.format(getMinimumTargetHeartRate()));
         System.out.println("\t\tYour maximum target heart rate is " + df.format(getMaximumTargetHeartRate()));
-        System.out.println("Your BMI is " + getBMI());
+        System.out.println("Your BMI is " +df.format( getBMI()));
         System.out.println("\t\tWeight Categories\t\t\tRange");
         System.out.println("\t\tUnderweight / too low\t\tBelow 18.5");
         System.out.println("\t\tHealthy range\t\t\t\t18.5 - 25");
