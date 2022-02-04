@@ -58,7 +58,11 @@ public class HealthProfileTest {
                 /**
                  * Go through each line a put the line the data arraylist declared above.
                  */
-                data.add(myReader.nextLine());
+                String readLine = myReader.nextLine();
+                if(readLine.isEmpty()){
+                    continue;
+                }
+                data.add(readLine);
             }
         } catch (FileNotFoundException e) {
 
